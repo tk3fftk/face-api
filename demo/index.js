@@ -127,6 +127,7 @@ async function main() {
 
   // load face-api models
   log('Loading FaceAPI models');
+  log(`modelPath is ${modelPath}`)
   await faceapi.nets.tinyFaceDetector.load(modelPath);
   await faceapi.nets.ssdMobilenetv1.load(modelPath);
   await faceapi.nets.ageGenderNet.load(modelPath);
